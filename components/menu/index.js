@@ -4,17 +4,19 @@ import './style.less'
 const Menu = () => {
     const [active, setActive] = useState(false)
     const documentExist = typeof document === 'object'
-    documentExist && document.querySelector('body').addEventListener('click', function(){
-        setActive(false)
-    })
+    documentExist && document.querySelector('body').addEventListener('click', toggleActive)
+
+    const toggleActive = (e) => {
+        setActive(!active)
+    }
 
     return (
         <div>
-            <a href="javascript:void(0);" className="menu" onClick={() => setActive(!active)}>
+            <a href="javascript:void(0);" className="menu" onClick={toggleActive}>
                 <img src="https://expertschoice.in/ara/menu-img.png" />
             </a>
             <div className={`menu-wrapper ${active ? 'show' : 'hide'}`}>
-                <div className="close" onClick={() => setActive(!active)}><span>CLOSE</span></div>
+                <div className="close" onClick={toggleActive}><span>CLOSE</span></div>
                 <div className="nav">
                     <div className="menu">
                         <span className="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
