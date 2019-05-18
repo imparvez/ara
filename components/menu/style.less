@@ -1,0 +1,52 @@
+.menu-wrapper {
+    display: none;
+    position: fixed;
+    max-width: 320px;
+    width: 100%;
+    background: #fff;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all .5s ease-in-out;
+
+    &.show {
+        display: block;
+    }
+
+    .close {
+      display:flex;
+      padding: 25px;
+      cursor: pointer;
+      &.bootom {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+      }
+      span {
+        margin-left:auto;
+        font-size: 21px;
+      }
+    }
+    .nav {
+      padding:30px;
+      .menu {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        span {
+          &.icon {
+            margin-right:10px;
+          }
+        }
+        .name {
+          font-size:21px;
+          color:#4d4d4d;
+        }
+      }
+    }
+}

@@ -1,0 +1,6 @@
+# Deployment directories
+node_modules
+# Mac
+.DS_Store
+# Optional REPL history
+.next
