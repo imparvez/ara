@@ -3,6 +3,10 @@ import './style.less'
 
 const Menu = () => {
     const [active, setActive] = useState(false)
+    const documentExist = typeof document === 'object'
+    documentExist && document.querySelector('body').addEventListener('click', function(){
+        setActive(false)
+    })
 
     return (
         <div>
