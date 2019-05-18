@@ -13,27 +13,27 @@ const Menu = () => {
             <a href="javascript:void(0);" className="menu" onClick={() => setActive(!active)}>
                 <img src="https://expertschoice.in/ara/menu-img.png" />
             </a>
-            <div class={`menu-wrapper ${active ? 'show' : 'hide'}`}>
-                <div class="close" onClick={() => setActive(!active)}><span>CLOSE</span></div>
-                <div class="nav">
-                    <div class="menu">
-                        <span class="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
-                        <div class="name">HOME</div>
+            <div className={`menu-wrapper ${active ? 'show' : 'hide'}`}>
+                <div className="close" onClick={() => setActive(!active)}><span>CLOSE</span></div>
+                <div className="nav">
+                    <div className="menu">
+                        <span className="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
+                        <div className="name">HOME</div>
                     </div>
-                    <div class="menu">
-                        <span class="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
-                        <div class="name">OUR PEOPLE</div>
+                    <div className="menu">
+                        <span className="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
+                        <div className="name">OUR PEOPLE</div>
                     </div>
-                    <div class="menu">
-                        <span class="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
-                        <div class="name">PROJECTS</div>
+                    <div className="menu">
+                        <span className="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
+                        <div className="name">PROJECTS</div>
                     </div>
-                    <div class="menu">
-                        <span class="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
-                        <div class="name">CONTACT</div>
+                    <div className="menu">
+                        <span className="icon"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
+                        <div className="name">CONTACT</div>
                     </div>
                 </div>
-                <div class="close bootom"><span>MENU</span></div>
+                <div className="close bootom"><span>MENU</span></div>
             </div>
         </div>
     )
