@@ -1,4 +1,5 @@
 import React from 'react'
+import Menu from '../components/menu'
 import '../styles/people-list.less'
 
 function PeopleList() {
@@ -14,9 +15,7 @@ function PeopleList() {
                         </a>
                         </div>
                         <div className="column column-right">
-                        <a href="javascript:void(0);" className="menu">
-                            <img src="https://expertschoice.in/ara/menu-img.png" />
-                        </a>
+                            <Menu />
                         </div>
                     </div>
                     </div>
