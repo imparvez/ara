@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Menu from '../components/menu'
+import { triangleImage } from '../constants/variables'
 import '../styles/index.less'
 
 function Home() {
@@ -35,18 +36,18 @@ function Home() {
                                 </div>
                                 <div className="column column-right">
                                     <div className="project-sliders">
-                                        <div class="slider-section" id="slider2">
+                                        <div className="slider-section" id="slider2">
                                             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
                                         </div>
-                                        <div class="slider-section" id="slider3">
+                                        <div className="slider-section" id="slider3">
                                             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
                                         </div>
                                     </div>
-                                    <div class="bullets">
-                                        <div class="list">
-                                            <span id="bullet1"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
-                                            <span id="bullet2"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
-                                            <span id="bullet3"><img src="https://expertschoice.in/ara/menu-img.png" /></span>
+                                    <div className="bullets">
+                                        <div className="list">
+                                            <span id="bullet1"><img src={triangleImage} /></span>
+                                            <span id="bullet2"><img src={triangleImage} /></span>
+                                            <span id="bullet3"><img src={triangleImage} /></span>
                                         </div>
                                     </div>
                                 </div>

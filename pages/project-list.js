@@ -24,120 +24,120 @@ const ProjectList = () => (
             <div className="row">
             <div className="container team-container">
                 <div className="grid">
-                <div className="column">
-                    <div className="project-list">
-                    <div className="gray-img">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                    <div className="column">
+                        <div className="project-list">
+                            <div className="gray-img">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-slider">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-overlay">
+                                <div className="details-section">
+                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="project-slider">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                    <div className="column">
+                        <div className="project-list">
+                            <div className="gray-img">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-slider">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-overlay">
+                                <div className="details-section">
+                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="project-overlay">
-                        <div className="details-section">
-                        <h2>DESIGNATION | DESIGNATION</h2>
+                    <div className="column">
+                        <div className="project-list">
+                            <div className="gray-img">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-slider">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-overlay">
+                                <div className="details-section">
+                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                </div>
-                <div className="column">
-                    <div className="project-list">
-                    <div className="gray-img">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                    <div className="column">
+                        <div className="project-list">
+                            <div className="gray-img">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-slider">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-overlay">
+                                <div className="details-section">
+                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="project-slider">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                    <div className="column">
+                        <div className="project-list">
+                            <div className="gray-img">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-slider">
+                                <div className="image-wrapper">
+                                    <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-overlay">
+                                <div className="details-section">
+                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="project-overlay">
-                        <div className="details-section">
-                        <h2>DESIGNATION | DESIGNATION</h2>
+                    <div className="column">
+                        <div className="project-list">
+                            <div className="gray-img">
+                                <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-slider">
+                                <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
+                                </div>
+                            </div>
+                            <div className="project-overlay">
+                                <div className="details-section">
+                                <h2>DESIGNATION | DESIGNATION</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                </div>
-                <div className="column">
-                    <div className="project-list">
-                    <div className="gray-img">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-slider">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-overlay">
-                        <div className="details-section">
-                        <h2>DESIGNATION | DESIGNATION</h2>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div className="column">
-                    <div className="project-list">
-                    <div className="gray-img">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-slider">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-overlay">
-                        <div className="details-section">
-                        <h2>DESIGNATION | DESIGNATION</h2>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div className="column">
-                    <div className="project-list">
-                    <div className="gray-img">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-slider">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-overlay">
-                        <div className="details-section">
-                        <h2>DESIGNATION | DESIGNATION</h2>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div className="column">
-                    <div className="project-list">
-                    <div className="gray-img">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-disable.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-slider">
-                        <div className="image-wrapper">
-                        <img src="https://expertschoice.in/ara/project-color.jpg" alt="name" />
-                        </div>
-                    </div>
-                    <div className="project-overlay">
-                        <div className="details-section">
-                        <h2>DESIGNATION | DESIGNATION</h2>
-                        </div>
-                    </div>
-                    </div>
-                </div>
                 </div>
             </div>
             </div>
