@@ -17,9 +17,16 @@ body {
       width: 100%;
       .container {
         width: 100%;
-  
+        .header-section {
+          .grid {
+            display: flex;
+          }
+        }
         .grid {
           display: flex;
+          @media only screen and (max-width: 768px) {
+            display: block;
+          }
           .column {
             .logo {
               img {
@@ -50,6 +57,9 @@ body {
             bottom: 0;
             margin-bottom: 25px;
             left: 0;
+            @media only screen and (max-width: 768px) {
+              position: relative;
+            }
             h2 {
               font-size: 28px;
               color: #fff;
@@ -84,8 +94,15 @@ body {
                 position: absolute;
                 right: 15px;
                 top: 0;
+                @media only screen and (max-width: 768px) {
+                  width: 100%;
+                  height: auto;
+                }
                 img {
                   height:100%;
+                  @media only screen and (max-width: 768px) {
+                    width: 100%;
+                  }
                 }
               }
             }
@@ -93,6 +110,10 @@ body {
               position: absolute;
               right: 0;
               bottom: 0;
+              @media only screen and (max-width: 768px) {
+                position: fixed;
+                margin-right: 15px;
+              }
               .list {
                 padding:15px 0;
                 span {
@@ -108,7 +129,6 @@ body {
       }
     }
   }
-  
 .slick-slider {
   max-width: 383px;
   width: 100%;
