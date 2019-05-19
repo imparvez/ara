@@ -1,7 +1,40 @@
 import React, { Fragment } from 'react'
+import Slider from "react-slick"
 import Menu from '../components/menu'
 import { triangleImage } from '../constants/variables'
 import '../styles/index.less'
+
+const SimpleSlider = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+    return (
+        <Slider {...settings}>
+          <div>
+             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+          </div>
+          <div>
+             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+          </div>
+          <div>
+             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+          </div>
+          <div>
+             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+          </div>
+          <div>
+             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+          </div>
+          <div>
+             <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+          </div>
+        </Slider>
+      );
+}
 
 function Home() {
     return (
@@ -37,10 +70,10 @@ function Home() {
                                 <div className="column column-right">
                                     <div className="project-sliders">
                                         <div className="slider-section" id="slider2">
-                                            <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                                            {SimpleSlider()}
                                         </div>
                                         <div className="slider-section" id="slider3">
-                                            <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                                            {SimpleSlider()}
                                         </div>
                                     </div>
                                     <div className="bullets">
