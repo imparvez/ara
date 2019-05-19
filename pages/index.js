@@ -56,6 +56,19 @@ class SimpleSlider extends Component {
 }
 
 class Home extends Component {
+    renderSliderContent = (number) => {
+        if (typeof window !== 'undefined') {
+            document.querySelector('.slider-section').style["display"] = "none";
+            document.querySelector(`.slider${number}`).style["display"] = "block";
+        }
+    }
+
+    clearSliderContent = (number) => {
+        if (typeof window !== 'undefined') {
+            document.querySelector(`.slider${number}`).style["display"] = "none";
+        }
+    }
+
     render() {
         return (
             <Fragment>
@@ -89,18 +102,39 @@ class Home extends Component {
                                     </div>
                                     <div className="column column-right">
                                         <div className="project-sliders">
-                                            <div className="slider-section" id="slider2">
+                                            <div className="slider-section slider1" id="slider1">
                                                 <SimpleSlider />
                                             </div>
-                                            <div className="slider-section" id="slider3">
+                                            <div className="slider-section slider2" id="slider2">
+                                                <SimpleSlider />
+                                            </div>
+                                            <div className="slider-section slider3" id="slider3">
                                                 <SimpleSlider />
                                             </div>
                                         </div>
                                         <div className="bullets">
                                             <div className="list">
-                                                <span id="bullet1"><img src={triangleImage} /></span>
-                                                <span id="bullet2"><img src={triangleImage} /></span>
-                                                <span id="bullet3"><img src={triangleImage} /></span>
+                                                <span
+                                                    id="bullet1"
+                                                    onMouseEnter={() => this.renderSliderContent(1)}
+                                                    onMouseLeave={() => this.clearSliderContent(1)}
+                                                >
+                                                    <img src={triangleImage} />
+                                                </span>
+                                                <span
+                                                    id="bullet2"
+                                                    onMouseEnter={() => this.renderSliderContent(2)}
+                                                    onMouseLeave={() => this.clearSliderContent(2)}
+                                                >
+                                                    <img src={triangleImage} />
+                                                </span>
+                                                <span
+                                                    id="bullet3"
+                                                    onMouseEnter={() => this.renderSliderContent(3)}
+                                                    onMouseLeave={() => this.clearSliderContent(3)}
+                                                >
+                                                    <img src={triangleImage} />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
