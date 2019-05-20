@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react'
+import Link from 'next/link'
 import { triangleImage } from '../../constants/variables'
 import './style.less'
 
@@ -10,13 +11,13 @@ const Menu = () => {
     const linkList = [
         {
             text: 'HOME',
-            url: ''
+            url: '/'
         },{
             text: 'OUR PEOPLE',
-            url: ''
+            url: '/people-list'
         },{
             text: 'PROJECTS',
-            url: ''
+            url: '/project-list'
         },{
             text: 'CONTACT',
             url: ''
@@ -29,7 +30,9 @@ const Menu = () => {
                 {linkList.map((item, index) => (
                     <div key={index} className="menu">
                         <span className="icon"><img src={triangleImage} /></span>
-                        <div className="name">{item.text}</div>
+                        <Link href={item.url}>
+                            <div className="name">{item.text}</div>
+                        </Link>
                     </div>
                 ))}
             </Fragment>
