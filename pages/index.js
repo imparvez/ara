@@ -95,7 +95,19 @@ class Home extends Component {
                                 <div className="grid">
                                     <div className="column">
                                         <div className="left-content">
-                                            <h2>We join the dots</h2>
+                                            <div className="title-text">
+                                                <h2 class="rw-sentence">
+                                                    <span>We join the</span>
+                                                    <div class="rw-words rw-words-1">
+                                                        <span>dots</span>
+                                                        <span>sounds</span>
+                                                        <span>magic</span>
+                                                        <span>experiences</span>
+                                                        <span>feelings</span>
+                                                        <span>butterflies</span>
+                                                    </div>
+                                                </h2>
+                                            </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor purus. Proin ornare tellus a pretium consectetur. Etiam finibus purus ex, a aliquet metus .</p>
                                             <h4>
                                                 <Scramble
