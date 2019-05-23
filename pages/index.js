@@ -97,7 +97,23 @@ class Home extends Component {
                                         <div className="left-content">
                                             <h2>We join the dots</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor purus. Proin ornare tellus a pretium consectetur. Etiam finibus purus ex, a aliquet metus .</p>
-                                            <h4>HOME</h4>
+                                            <h4>
+                                                <Scramble
+                                                    autoStart
+                                                    text="HOME"
+                                                    steps={[
+                                                    {
+                                                        roll: 10,
+                                                        action: '+',
+                                                        type: 'all',
+                                                    },
+                                                    {
+                                                        action: '-',
+                                                        type: 'forward',
+                                                    },
+                                                    ]}
+                                                />
+                                            </h4>
                                         </div>
                                     </div>
                                     <div className="column column-right">
