@@ -1,0 +1,91 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import './common.less';
+
+body {padding:0; margin:0;background:#000;
+    background-image: 
+      url('https://expertschoice.in/ara/bg-image.png');}
+  .main-container {
+    height: 100vh;
+    position: relative;
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 15px;
+    .row {
+      width:100%;
+      .container {
+        width:100%;
+        
+        .grid {
+          display: flex;
+          .column {
+            .logo {
+              img {
+               width:100px; 
+              }
+            }
+            &.column-right {
+              margin-left:auto;
+              .menu {
+                img {
+                  width:25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-section {
+      padding:25px 0;
+    }
+    .super-container {
+      .row {
+        .container {
+          .column-left {
+            width: 65%;
+            img {
+              width: 100%;
+            }
+          }
+          .column-right {
+            width: 30%;
+          }
+          
+          .detail-content {
+            margin-bottom: 25px;
+            padding-left: 30px;
+            h2 {
+              font-size:28px;
+              color:#fff;
+              font-weight:700;
+              line-height:32px;
+              padding-bottom:10px;
+              margin:0;
+              text-align: right;
+            }
+            .tags {
+              padding: 5px 0 15px;
+              span {
+                font-size:16px;
+                display: block;
+                color:#fff;
+                font-weight:400;
+                line-height:18px;
+                margin:7px 0;
+                text-align: right;
+              }
+            }
+            p {
+              font-size:16px;
+              color:#fff;
+              font-weight:400;
+              line-height:18px;
+              margin:0;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
