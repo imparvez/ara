@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Slider from "react-slick"
+import Scramble from 'react-scramble'
 import Menu from '../components/menu'
 import { triangleImage } from '../constants/variables'
 import '../styles/index.less'
@@ -96,9 +97,9 @@ class Home extends Component {
                                     <div className="column">
                                         <div className="left-content">
                                             <div className="title-text">
-                                                <h2 class="rw-sentence">
+                                                <h2 className="rw-sentence">
                                                     <span>We join the</span>
-                                                    <div class="rw-words rw-words-1">
+                                                    <div className="rw-words rw-words-1">
                                                         <span>dots</span>
                                                         <span>sounds</span>
                                                         <span>magic</span>
