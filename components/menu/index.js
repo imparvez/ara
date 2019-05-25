@@ -45,7 +45,7 @@ const Menu = () => {
                 <img src={triangleImage} />
             </a>
             <div className={`menu-wrapper ${active ? 'show' : 'hide'}`}>
-                <div className="close" onClick={toggleActive}><span>CLOSE</span></div>
+                <div className="close cross" onClick={toggleActive}><span>CLOSE</span></div>
                 <div className="nav">
                     {listItem()}
                 </div>
