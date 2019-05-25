@@ -14,7 +14,7 @@ const Menu = () => {
             url: '/'
         },{
             text: 'OUR PEOPLE',
-            url: '/people-list'
+            url: '/people'
         },{
             text: 'PROJECTS',
             url: '/project-list'

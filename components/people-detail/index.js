@@ -7,7 +7,7 @@ function PeopleDetail() {
             <div className="row">
                 <div className="container">
                     <div className="grid">
-                        <div className="column">
+                        <div className="column text-content">
                             <div className="left-content">
                                 <h2>Our People</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor purus. Proin ornare tellus a pretium consectetur. Etiam finibus purus ex, a aliquet metus .</p>
