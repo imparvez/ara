@@ -1,0 +1,90 @@
+body {padding:0; margin:0;background:#000;
+    background-image: 
+      url('https://expertschoice.in/ara/bg-image.png');}
+  .main-container {
+    height:100vh;
+    position: relative;
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 15px;
+    .row {
+      width:100%;
+      .container {
+        width:100%;
+        
+        .grid {
+          display: flex;
+          .column {
+            .logo {
+              img {
+               width:100px; 
+              }
+            }
+            &.column-right {
+              margin-left:auto;
+              .menu {
+                img {
+                  width:25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-section {
+      padding:25px 0;
+    }
+    .super-container {
+      .row {
+        .container {
+          &.team-container {
+            width: 100%;
+            .grid {
+              display:flex;
+              justify-content: space-between;
+              flex-wrap:wrap;
+              .column {
+                width:25%;
+                padding:15px 18px;
+                a {
+                  text-decoration:none;
+                }
+                .image-wrapper {
+                  img {
+                    width:100%;
+                  }
+                }
+                .details-section {
+                  h2 {
+                    font-size:18px;
+                    color:#fff;
+                    font-weight:700;
+                    line-height:21px;
+                    padding:15px 0;
+                    margin:0;
+                  }
+                  p {
+                    font-size:14px;
+                    color:#fff;
+                    font-weight:400;
+                    line-height:16px;
+                    margin:0;
+                  } 
+                } 
+              }
+            }
+          }
+          
+          .left-content {
+            max-width:250px;
+            position:absolute ;
+            bottom: 0;
+            margin-bottom: 25px;
+            left: 0;
+            
+          }
+        }
+      }
+    }
+  }

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Slider from "react-slick"
 import Scramble from 'react-scramble'
-import Menu from '../components/menu'
+import Header from '../components/header'
 import { triangleImage } from '../constants/variables'
 import '../styles/index.less'
 
@@ -27,7 +27,8 @@ class SimpleSlider extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            arrows : false,
         }
         return (
             <div className="sliderWrapper" onMouseEnter={this.play} onMouseLeave={this.pause}>
@@ -76,18 +77,7 @@ class Home extends Component {
                 <div className="main-container">
                     <div className="row">
                         <div className="container">
-                            <div className="header-section">
-                                <div className="grid">
-                                    <div className="column">
-                                        <a href="javascript:void(0)" className="logo">
-                                            <img src="https://expertschoice.in/ara/ara-logo.png" alt="Ara" />
-                                        </a>
-                                    </div>
-                                    <div className="column column-right">
-                                        <Menu />
-                                    </div>
-                                </div>
-                            </div>
+                            <Header />
                         </div>
                     </div>
                     <div className="super-container">

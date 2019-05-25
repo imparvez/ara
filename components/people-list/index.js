@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import Header from '../components/header'
-import '../styles/people-list.less'
+import './style.less'
 
 function PeopleList() {
     const peopleList = [
@@ -51,18 +50,11 @@ function PeopleList() {
         )
     }
     return (
-        <div className="main-container">
+        <div className="super-container">
             <div className="row">
-                <div className="container">
-                    <Header />
-                </div>
-            </div>
-            <div className="super-container">
-                <div className="row">
-                    <div className="container team-container">
-                        <div className="grid">
-                            {renderPeopleList()}
-                        </div>
+                <div className="container team-container">
+                    <div className="grid">
+                        {renderPeopleList()}
                     </div>
                 </div>
             </div>

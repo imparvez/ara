@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import Menu from '../components/menu'
+import Header from '../components/header'
 import Slider from "react-slick"
 import '../styles/project-list.less'
 class SimpleSlider extends Component {
@@ -57,18 +57,7 @@ const ProjectList = () => (
     <div className="main-container">
         <div className="row">
             <div className="container">
-            <div className="header-section">
-                <div className="grid">
-                <div className="column">
-                    <a href="javascript:void(0)" className="logo">
-                        <img src="https://expertschoice.in/ara/ara-logo.png" alt="Ara" />
-                    </a>
-                </div>
-                <div className="column column-right">
-                    <Menu />
-                </div>
-                </div>
-            </div>
+                <Header />
             </div>
         </div>
         <div className="super-container">

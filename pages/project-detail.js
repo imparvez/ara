@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Slider from "react-slick"
-import Menu from '../components/menu'
+import Header from '../components/header'
 import '../styles/project-detail.less'
 
 class SimpleSlider extends Component {
@@ -60,18 +60,7 @@ function PeopleDetail() {
         <div className="main-container">
             <div className="row">
                 <div className="container">
-                    <div className="header-section">
-                        <div className="grid">
-                            <div className="column">
-                                <a href="javascript:void(0)" className="logo">
-                                    <img src="https://expertschoice.in/ara/ara-logo.png" alt="Ara" />
-                                </a>
-                            </div>
-                            <div className="column column-right">
-                                <Menu />
-                            </div>
-                        </div>
-                    </div>
+                    <Header />
                 </div>
             </div>
             <div className="super-container">
