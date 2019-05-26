@@ -83,44 +83,76 @@ class ReactSlickDemo extends Component {
                 downHandler={() => this.slider.slickNext()}>
                     <Slider {...settings} ref={slider => (this.slider = slider)}>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                         <div className="column" style={peopleCard}>
-                            <img src="https://expertschoice.in/ara/team1.jpg" />
-                            <div style={name}>Lorem Ipsum</div>
-                            <div>Designation</div>
+                            <div className="image-wrapper">
+                                <img src="https://expertschoice.in/ara/team1.jpg" />
+                            </div>
+                            <div className="details-section">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Designation</p>
+                            </div>
                         </div>
                     </Slider>
                 </ReactScrollWheelHandler>
