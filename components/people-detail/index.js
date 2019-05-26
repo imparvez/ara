@@ -5,7 +5,7 @@ function PeopleDetail() {
     return (
         <div className="super-container">
             <div className="row">
-                <div className="container">
+                <div className="container people-container">
                     <div className="grid">
                         <div className="column text-content">
                             <div className="left-content">
