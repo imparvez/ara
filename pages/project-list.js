@@ -62,7 +62,7 @@ const ProjectList = () => (
         </div>
         <div className="super-container">
             <div className="row">
-            <div className="container team-container">
+            <div className="container project-container">
                 <div className="grid">
                     <div className="column">
                         <div className="project-list">
