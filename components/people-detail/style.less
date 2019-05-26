@@ -38,8 +38,13 @@ body {padding:0; margin:0;background:#000;
       .row {
         .container {
           &.people-container {
+              .grid {
+                  @media only screen and (max-width: 768px) {
+                      display:block;
+                  }
+              }
             .left-content {
-              max-width:250px;
+              max-width:350px;
               margin-bottom: 25px;
               position: static !important;
               h2 {
