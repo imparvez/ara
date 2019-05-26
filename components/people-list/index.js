@@ -1,5 +1,58 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, Component } from 'react'
+import Slider from "react-slick"
 import './style.less'
+
+class SimpleSlider extends Component {
+    constructor(props) {
+        super(props);
+        this.play = this.play.bind(this);
+        this.pause = this.pause.bind(this);
+    }
+
+    play = () => {
+        this.slider.slickPlay()
+    }
+    
+    pause = () => {
+        this.slider.slickPause()
+    }
+
+    render(){
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 2000,
+            arrows : false,
+        }
+        return (
+            <div className="sliderWrapper" onMouseEnter={this.play} onMouseLeave={this.pause}>
+                <Slider {...settings} ref={slider => (this.slider = slider)}>
+                <div>
+                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
+                </div>
+                </Slider>
+            </div>
+        );
+    }
+}
 
 function PeopleList() {
     const peopleList = [
@@ -55,6 +108,11 @@ function PeopleList() {
                 <div className="container team-container">
                     <div className="grid">
                         {renderPeopleList()}
+                    </div>
+                    <div className="grid">
+                        <div className="column slider-column">
+                            <SimpleSlider />
+                        </div>
                     </div>
                 </div>
             </div>
