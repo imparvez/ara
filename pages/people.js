@@ -10,10 +10,8 @@ const People = () => (
                 <Header />
             </div>
         </div>
-        <div className="row">
+        <div className="super-container people-details">
             <PeopleDetail />
-        </div>
-        <div className="row">
             <PeopleList />
         </div>
     </div>
