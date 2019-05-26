@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import Header from '../components/header'
-import '../styles/people-list.less'
 
 function PeopleList() {
     const peopleList = [
