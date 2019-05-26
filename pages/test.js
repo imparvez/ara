@@ -11,7 +11,7 @@ class ReactSlickDemo extends Component {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 2000,
-        arrows : false,
+        arrows : true,
       };
       return (
         <div className="container">
@@ -32,7 +32,7 @@ class ReactSlickDemo extends Component {
         </div>
       );
     }
-  }
+}
 
 class Test extends Component {
     render(){
