@@ -74,6 +74,24 @@ class ReactSlickDemo extends Component {
         slidesToScroll: 1,
         autoplaySpeed: 1000,
         arrows : false,
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows : true,
+              }
+            },
+            {
+                breakpoint: 559,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows : true,
+                }
+              },
+        ]
       };
       return (
         <div className="container team-container">
