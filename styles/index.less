@@ -17,11 +17,12 @@ body {
       .row {
         .container {
           .left-content {
-            max-width: 250px;
+            max-width: 350px;
             position: absolute;
             bottom: 0;
             margin-bottom: 25px;
             left: 0;
+            padding:0 25px;
             @media only screen and (max-width: 768px) {
               position: relative;
             }
@@ -141,12 +142,16 @@ body {
                 display: none;
               }
               .slider-section {
-                width: 383px;
+                width: 500px;
                 height:70vh;
                 position: absolute;
                 right: 15px;
                 top: 0;
                 display: none;
+                 .slick-slider {
+                  max-width: 500px;
+                  width: 100%;
+                }
                 @media only screen and (max-width: 768px) {
                   width: 100%;
                   height: auto;
@@ -163,6 +168,7 @@ body {
               position: absolute;
               right: 0;
               bottom: 0;
+              padding:0 25px;
               @media only screen and (max-width: 768px) {
                 position: fixed;
                 margin-right: 15px;
@@ -185,11 +191,6 @@ body {
       }
     }
   }
-.slick-slider {
-  max-width: 383px;
-  width: 100%;
-}
-
 @keyframes move {
   0%  { top: 0px; }
   20% { top: -32px; }
