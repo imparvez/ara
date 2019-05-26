@@ -49,6 +49,16 @@ const renderPeopleList = () => {
         </Fragment>
     )
 }
+
+const peopleCard = {
+    textAlign: 'center'
+}
+
+const name = {
+    fontSize: '16px',
+    color: '#fff',
+    fontWeight: '800',
+}
 class ReactSlickDemo extends Component {
     constructor(props) {
         super(props);
@@ -69,25 +79,53 @@ class ReactSlickDemo extends Component {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         arrows : false,
       };
       return (
         <div className="container" onMouseEnter={this.play} onMouseLeave={this.pause}>
           <Slider {...settings} ref={slider => (this.slider = slider)}>
-            <div>
-              <img src="http://placekitten.com/g/400/200" />
+            <div style={peopleCard}>
+              <img src="https://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
             </div>
-            <div>
-              <img src="http://placekitten.com/g/400/200" />
+            <div style={peopleCard}>
+              <img src="https://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
             </div>
-            <div>
-              <img src="http://placekitten.com/g/400/200" />
+            <div style={peopleCard}>
+              <img src="https://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
             </div>
-            <div>
-              <img src="http://placekitten.com/g/400/200" />
+            <div style={peopleCard}>
+              <img src="https://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
+            </div>
+            <div style={peopleCard}>
+              <img src="https://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
+            </div>
+            <div style={peopleCard}>
+              <img src="https://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
+            </div>
+            <div style={peopleCard}>
+              <img src="https://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
+            </div>
+            <div style={peopleCard}>
+              <img src="hhttps://expertschoice.in/ara/team1.jpg" />
+              <div style={name}>Lorem Ipsum</div>
+              <div>Designation</div>
             </div>
           </Slider>
         </div>
