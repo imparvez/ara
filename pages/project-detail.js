@@ -65,7 +65,7 @@ function PeopleDetail() {
             </div>
             <div className="super-container">
                 <div className="row">
-                    <div className="container">
+                    <div className="container project-details">
                         <div className="grid">
                             <div className="column column-left">
                                 <div className="slider-section">
