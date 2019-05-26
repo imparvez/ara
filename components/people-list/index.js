@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from 'react'
 import Slider from "react-slick"
+import ReactScrollWheelHandler from "react-scroll-wheel-handler"
 import './style.less'
 
 const peopleList = [
@@ -62,16 +63,6 @@ const name = {
 class ReactSlickDemo extends Component {
     constructor(props) {
         super(props);
-        this.play = this.play.bind(this);
-        this.pause = this.pause.bind(this);
-    }
-
-    play = () => {
-        this.slider.slickPlay()
-    }
-    
-    pause = () => {
-        this.slider.slickPause()
     }
 
     render() {
@@ -85,49 +76,55 @@ class ReactSlickDemo extends Component {
         arrows : false,
       };
       return (
-        <div className="container" onMouseEnter={this.play} onMouseLeave={this.pause}>
-          <Slider {...settings} ref={slider => (this.slider = slider)}>
-            <div style={peopleCard}>
-              <img src="https://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
+        <div className="container team-container">
+            <div className="grid">
+                <ReactScrollWheelHandler
+                upHandler={() => this.slider.slickPrev()}
+                downHandler={() => this.slider.slickNext()}>
+                    <Slider {...settings} ref={slider => (this.slider = slider)}>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                        <div className="column" style={peopleCard}>
+                            <img src="https://expertschoice.in/ara/team1.jpg" />
+                            <div style={name}>Lorem Ipsum</div>
+                            <div>Designation</div>
+                        </div>
+                    </Slider>
+                </ReactScrollWheelHandler>
             </div>
-            <div style={peopleCard}>
-              <img src="https://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
-            </div>
-            <div style={peopleCard}>
-              <img src="https://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
-            </div>
-            <div style={peopleCard}>
-              <img src="https://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
-            </div>
-            <div style={peopleCard}>
-              <img src="https://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
-            </div>
-            <div style={peopleCard}>
-              <img src="https://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
-            </div>
-            <div style={peopleCard}>
-              <img src="https://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
-            </div>
-            <div style={peopleCard}>
-              <img src="hhttps://expertschoice.in/ara/team1.jpg" />
-              <div style={name}>Lorem Ipsum</div>
-              <div>Designation</div>
-            </div>
-          </Slider>
         </div>
       );
     }
