@@ -14,66 +14,71 @@
     &.show {
         right: 0;
     }
-
-    .close {
-      display:flex;
-      padding: 25px;
-      cursor: pointer;
-        
-      &.cross {
-        position: absolute;
-        right: 20px;
-        top: 32px;
-        width: 75px;
-        height: 75px;
-        padding: 0;
-
-        &:hover {
-          opacity: 1;
-        }
-
-        &:before, &:after {
+    .close-menu {
+      padding: 40px 0;
+      .close {
+        display:flex;
+        padding: 25px;
+        cursor: pointer;
+          
+        &.cross {
           position: absolute;
-          left: 28px;
-          top: -13px;
-          content: ' ';
-          height: 50px;
-          width: 2px;
-          background-color: #000;
-          opacity: 1;
+          right: 20px;
+          top: 32px;
+          width: 75px;
+          height: 75px;
+          padding: 0;
+  
+          &:hover {
+            opacity: 1;
+          }
+  
+          &:before, &:after {
+            position: absolute;
+            left: 28px;
+            top: -13px;
+            content: ' ';
+            height: 50px;
+            width: 2px;
+            background-color: #000;
+            opacity: 1;
+          }
+  
+          &:before {
+            transform: rotate(45deg);
+          }
+  
+          &:after {
+            transform: rotate(-45deg);
+          }
         }
-
-        &:before {
-          transform: rotate(45deg);
-        }
-
-        &:after {
-          transform: rotate(-45deg);
+        span {
+          margin-left: auto;
+          font-size: 21px;
+          position: absolute;
+          z-index: 2;
+          background: #fff;
+          font-size: 18px;
         }
       }
-      
+    }
+    .close {
       &.bottom {
           position: absolute;
           bottom: 0;
           right: 60px;
-      }
-      span {
-        margin-left: auto;
-        font-size: 21px;
-        position: absolute;
-        z-index: 2;
-        background: #fff;
-        font-size: 18px;
+          margin-bottom: 25px;
       }
     }
     .nav {
       padding:30px;
+      height: 85vh;
       .menu {
         display: flex;
         align-items: center;
         cursor: pointer;
         padding: 10px 0;
-
+        transition: all .5s ease-in-out;
         &:first-child {
             margin-top: 0;
         }
@@ -81,6 +86,24 @@
         span {
           &.icon {
             margin-right:10px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #4d4d4d;
+            transition: all .5s ease-in-out;
+          }
+        }
+        &:hover {
+          span {
+            &.icon {
+              margin-right:10px;
+              width: 0;
+              height: 0;
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-bottom: 20px solid #000;
+            }
           }
         }
         .name {
