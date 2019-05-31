@@ -31,15 +31,14 @@ body {padding:0; margin:0;background:#000;
         }
       }
     }
-    .header-section {
-      padding:25px 0;
-    }
     .super-container {
       .row {
         .container {
           &.project-details {
               padding: 0 15px;
             .grid {
+              height: 70vh;
+              align-items: center;
               @media only screen and (max-width: 768px) {
                 display: block;
               }
@@ -52,6 +51,36 @@ body {padding:0; margin:0;background:#000;
               img {
                 width: 100%;
               }
+              .slick-dots {
+                bottom: 0;
+                margin-bottom: 10px;
+                text-align: right;
+                li {
+                  button {
+                    margin-right: 0px;
+                    width: 0;
+                    height: 0;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 16px solid #4d4d4d;
+                    transition: all 0.5s ease-in-out;
+                    border-radius: 2px;
+                    padding: 0;
+                    &:hover,  {
+                      border-bottom: 16px solid #fff;
+                    }
+                    &::before {
+                      width: 0;
+                      color: transparent;
+                    }
+                  }
+                  &.slick-active {
+                    button {
+                      border-bottom: 16px solid #fff;
+                    }
+                  }
+                }
+              } 
             }
             .column-right {
               width: 30%;
@@ -67,13 +96,14 @@ body {padding:0; margin:0;background:#000;
                 padding: 30px 0;
               }
               h2 {
-                font-size:28px;
+                font-size:32px;
                 color:#fff;
                 font-weight:700;
-                line-height:32px;
+                line-height:38px;
                 padding-bottom:10px;
                 margin:0;
                 text-align: right;
+                font-family: 'Montserrat', sans-serif;
                 @media only screen and (max-width: 768px) {
                   text-align: left;
                 }
@@ -86,8 +116,9 @@ body {padding:0; margin:0;background:#000;
                   color:#fff;
                   font-weight:400;
                   line-height:18px;
-                  margin:7px 0;
+                  margin:10px 0;
                   text-align: right;
+                  font-family: 'Montserrat', sans-serif;
                   @media only screen and (max-width: 768px) {
                     text-align: left;
                   }
@@ -97,9 +128,10 @@ body {padding:0; margin:0;background:#000;
                 font-size:16px;
                 color:#fff;
                 font-weight:400;
-                line-height:18px;
+                line-height:23px;
                 margin:0;
                 text-align: right;
+                font-family: 'Montserrat', sans-serif;
                 @media only screen and (max-width: 768px) {
                   text-align: left;
                 }
