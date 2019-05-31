@@ -84,24 +84,26 @@ class Home extends Component {
                     </div>
                     <div className="super-container">
                         <div className="row">
-                            <div className="container">
+                            <div className="container home-container">
                                 <div className="grid">
                                     <div className="column">
                                         <div className="left-content">
                                             <div className="title-text">
                                                 <h2 className="rw-sentence">
-                                                    <span>We join the</span>
-                                                    <div className="rw-words rw-words-1">
-                                                        <span>dots</span>
-                                                        <span>sounds</span>
-                                                        <span>magic</span>
-                                                        <span>experiences</span>
-                                                        <span>feelings</span>
-                                                        <span>butterflies</span>
+                                                    <span>We</span>
+                                                    <div class="rw-words rw-words-1">
+                                                        <span>are geometry from memories</span>
+                                                        <span>connect the dots</span>
+                                                        <span>are nuances of the native</span>
+                                                        <span>are creators of the current</span>
+                                                        <span>are life in layers</span>
+                                                        <span>are up-to-the-minute</span>
                                                     </div>
                                                 </h2>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor purus. Proin ornare tellus a pretium consectetur. Etiam finibus purus ex, a aliquet metus .</p>
+                                            <p>ARA Designs characterizes architecture as an art and investigation of ensuring our urban
+                                                communities and structures fit with the manner in which we need to experience our lives.<br/><br/>
+                                                Our varied clientele exhibits our diverse work exposure. Our forte is building relationships.</p>
                                             <h4>
                                                 <Scramble
                                                     autoStart
