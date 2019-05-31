@@ -5,7 +5,7 @@ import Header from '../components/header'
 import { triangleImage } from '../constants/variables'
 import '../styles/index.less'
 
-class SimpleSlider extends Component {
+class Slider1 extends Component {
     constructor(props) {
         super(props);
         this.play = this.play.bind(this);
@@ -23,7 +23,7 @@ class SimpleSlider extends Component {
     render(){
         const settings = {
             dots: true,
-            infinite: true,
+            infinite: false,
             speed: 500,
             fade: true,
             autoplay: true,
@@ -35,24 +35,87 @@ class SimpleSlider extends Component {
         return (
             <div className="sliderWrapper" onMouseEnter={this.play} onMouseLeave={this.pause}>
                 <Slider {...settings} ref={slider => (this.slider = slider)}>
-                <div>
-                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/slider-showcse1.jpg" alt="" />
-                </div>
+                    <div>
+                        <img src="https://expertschoice.in/ara/team/home1.jpg" alt="" />
+                    </div>
+                </Slider>
+            </div>
+        );
+    }
+}
+
+class Slider2 extends Component {
+    constructor(props) {
+        super(props);
+        this.play = this.play.bind(this);
+        this.pause = this.pause.bind(this);
+    }
+
+    play = () => {
+        this.slider.slickPlay()
+    }
+    
+    pause = () => {
+        this.slider.slickPause()
+    }
+
+    render(){
+        const settings = {
+            dots: true,
+            infinite: false,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 2000,
+            arrows : false,
+        }
+        return (
+            <div className="sliderWrapper" onMouseEnter={this.play} onMouseLeave={this.pause}>
+                <Slider {...settings} ref={slider => (this.slider = slider)}>
+                    <div>
+                        <img src="https://expertschoice.in/ara/team/home2.jpg" alt="" />
+                    </div>
+                </Slider>
+            </div>
+        );
+    }
+}
+
+class Slider3 extends Component {
+    constructor(props) {
+        super(props);
+        this.play = this.play.bind(this);
+        this.pause = this.pause.bind(this);
+    }
+
+    play = () => {
+        this.slider.slickPlay()
+    }
+    
+    pause = () => {
+        this.slider.slickPause()
+    }
+
+    render(){
+        const settings = {
+            dots: true,
+            infinite: false,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 2000,
+            arrows : false,
+        }
+        return (
+            <div className="sliderWrapper" onMouseEnter={this.play} onMouseLeave={this.pause}>
+                <Slider {...settings} ref={slider => (this.slider = slider)}>
+                    <div>
+                        <img src="https://expertschoice.in/ara/team/home3.jpg" alt="" />
+                    </div>
                 </Slider>
             </div>
         );
@@ -126,13 +189,13 @@ class Home extends Component {
                                     <div className="column column-right">
                                         <div className="project-sliders">
                                             <div className="slider-section slider1" id="slider1">
-                                                <SimpleSlider />
+                                                <Slider1 />
                                             </div>
                                             <div className="slider-section slider2" id="slider2">
-                                                <SimpleSlider />
+                                                <Slider2 />
                                             </div>
                                             <div className="slider-section slider3" id="slider3">
-                                                <SimpleSlider />
+                                                <Slider3 />
                                             </div>
                                         </div>
                                         <div className="bullets">
