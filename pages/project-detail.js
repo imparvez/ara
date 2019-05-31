@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Slider from "react-slick"
+import Scramble from 'react-scramble'
 import Header from '../components/header'
 import '../styles/project-detail.less'
 
@@ -75,14 +76,81 @@ function PeopleDetail() {
                             </div>
                             <div className="column column-right">
                                 <div className="detail-content">
-                                    <h2>Our People</h2>
+                                    <h2>Hermosa</h2>
                                     <div className="tags">
-                                        <span>JAIPUR, RAJASTHAN |</span>
-                                        <span>COMMERCIAL  |</span>
-                                        <span>COMPLETED   |</span>
-                                        <span>12,000 SQ. FT.   |</span>
+                                        <span>
+                                        <Scramble
+                                            autoStart
+                                            text="JAIPUR, RAJASTHAN |"
+                                            steps={[
+                                            {
+                                                roll: 10,
+                                                action: '+',
+                                                type: 'all',
+                                            },
+                                            {
+                                                action: '-',
+                                                type: 'forward',
+                                            },
+                                            ]}
+                                        />
+                                        </span>
+                                        <span>
+                                            <Scramble
+                                                autoStart
+                                                text="COMMERCIAL |"
+                                                steps={[
+                                                {
+                                                    roll: 10,
+                                                    action: '+',
+                                                    type: 'all',
+                                                },
+                                                {
+                                                    action: '-',
+                                                    type: 'forward',
+                                                },
+                                                ]}
+                                            />
+                                        </span>
+                                        <span>
+                                            <Scramble
+                                                autoStart
+                                                text="COMPLETED |"
+                                                steps={[
+                                                {
+                                                    roll: 10,
+                                                    action: '+',
+                                                    type: 'all',
+                                                },
+                                                {
+                                                    action: '-',
+                                                    type: 'forward',
+                                                },
+                                                ]}
+                                            /> 
+                                        </span>
+                                        <span>
+                                            <Scramble
+                                                autoStart
+                                                text="12,000 SQ. FT. |"
+                                                steps={[
+                                                {
+                                                    roll: 10,
+                                                    action: '+',
+                                                    type: 'all',
+                                                },
+                                                {
+                                                    action: '-',
+                                                    type: 'forward',
+                                                },
+                                                ]}
+                                            />
+                                        </span>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor purus. Proin ornare tellus a pretium consectetur. Etiam finibus purus ex, a aliquet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor purus. Proin ornare tellus a pretium consectetur. Etiam finibus purus ex, a aliquet metus .</p>
+                                    <p>
+                                    The unwinding opposite arches putting together a sense of varied monolithic arches creates a succession of interconnected spaces. 
+                                    The 'Chand Bowri' concept in the showroom, provides an experimental space for artists and focusing on rich artisanal traditionals while including everything from furniture to furnishings. 
+                                    </p>
                                 </div>
                             </div>
                         </div>
