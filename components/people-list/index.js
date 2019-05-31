@@ -5,29 +5,25 @@ import './style.less'
 
 const peopleList = [
     {
-        name: 'Lorem Ipsum',
-        designation: 'Designation',
-        imageUrl: 'https://expertschoice.in/ara/team1.jpg',
+        name: 'Ankita Kuriakose',
+        designation: 'Associate',
+        imageUrl: 'https://expertschoice.in/ara/team/solo_01.jpg',
     },{
-        name: 'Lorem Ipsum',
-        designation: 'Designation',
-        imageUrl: 'https://expertschoice.in/ara/team1.jpg',
+        name: 'Pankaj Panwar',
+        designation: 'Associate',
+        imageUrl: 'https://expertschoice.in/ara/team/solo_02.jpg',
     },{
-        name: 'Lorem Ipsum',
-        designation: 'Designation',
-        imageUrl: 'https://expertschoice.in/ara/team1.jpg',
+        name: 'Raunak Shah',
+        designation: 'Associate',
+        imageUrl: 'https://expertschoice.in/ara/team/solo_03.jpg',
     },{
-        name: 'Lorem Ipsum',
-        designation: 'Designation',
-        imageUrl: 'https://expertschoice.in/ara/team1.jpg',
+        name: 'Rajdeep Modak',
+        designation: 'Senior Architect',
+        imageUrl: 'https://expertschoice.in/ara/team/solo_04.jpg',
     },{
-        name: 'Lorem Ipsum',
-        designation: 'Designation',
-        imageUrl: 'https://expertschoice.in/ara/team1.jpg',
-    },{
-        name: 'Lorem Ipsum',
-        designation: 'Designation',
-        imageUrl: 'https://expertschoice.in/ara/team1.jpg',
+        name: 'Twinkle Kataria',
+        designation: 'Design & Communication',
+        imageUrl: 'https://expertschoice.in/ara/team/solo_10.jpg',
     }
 ]
 
@@ -103,74 +99,47 @@ class ReactSlickDemo extends Component {
                         <Slider {...settings} ref={slider => (this.slider = slider)}>
                             <div className="column" style={peopleCard}>
                                 <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
+                                    <img src="https://expertschoice.in/ara/team/solo_01.jpg" />
                                 </div>
                                 <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
+                                    <h2>Ankita Kuriakose</h2>
+                                    <p>Associate</p>
                                 </div>
                             </div>
                             <div className="column" style={peopleCard}>
                                 <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
+                                    <img src="https://expertschoice.in/ara/team/solo_02.jpg" />
                                 </div>
                                 <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
+                                    <h2>Pankaj Panwar</h2>
+                                    <p>Associate</p>
                                 </div>
                             </div>
                             <div className="column" style={peopleCard}>
                                 <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
+                                    <img src="https://expertschoice.in/ara/team/solo_03.jpg" />
                                 </div>
                                 <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
+                                    <h2>Raunak Shah</h2>
+                                    <p>Associate</p>
                                 </div>
                             </div>
                             <div className="column" style={peopleCard}>
                                 <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
+                                    <img src="https://expertschoice.in/ara/team/solo_04.jpg" />
                                 </div>
                                 <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
+                                    <h2>Rajdeep Modak</h2>
+                                    <p>Senior Architect</p>
                                 </div>
                             </div>
                             <div className="column" style={peopleCard}>
                                 <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
+                                    <img src="https://expertschoice.in/ara/team/solo_010.jpg" />
                                 </div>
                                 <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
-                                </div>
-                            </div>
-                            <div className="column" style={peopleCard}>
-                                <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
-                                </div>
-                                <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
-                                </div>
-                            </div>
-                            <div className="column" style={peopleCard}>
-                                <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
-                                </div>
-                                <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
-                                </div>
-                            </div>
-                            <div className="column" style={peopleCard}>
-                                <div className="image-wrapper">
-                                    <img src="https://expertschoice.in/ara/team1.jpg" />
-                                </div>
-                                <div className="details-section">
-                                    <h2>Lorem Ipsum</h2>
-                                    <p>Designation</p>
+                                    <h2>Twinkle Kataria</h2>
+                                    <p>Design & Communication</p>
                                 </div>
                             </div>
                         </Slider>
