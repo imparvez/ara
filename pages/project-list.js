@@ -76,7 +76,7 @@ const ProjectList = () => (
                             </div>
                             <div className="project-overlay">
                                 <div className="details-section">
-                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                    <h2>HERMOSA | JAIPUR</h2>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ const ProjectList = () => (
                             </div>
                             <div className="project-overlay">
                                 <div className="details-section">
-                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                    <h2>HERMOSA | JAIPUR</h2>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ const ProjectList = () => (
                             </div>
                             <div className="project-overlay">
                                 <div className="details-section">
-                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                    <h2>HERMOSA | JAIPUR</h2>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ const ProjectList = () => (
                             </div>
                             <div className="project-overlay">
                                 <div className="details-section">
-                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                    <h2>HERMOSA | JAIPUR</h2>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@ const ProjectList = () => (
                             </div>
                             <div className="project-overlay">
                                 <div className="details-section">
-                                    <h2>DESIGNATION | DESIGNATION</h2>
+                                    <h2>HERMOSA | JAIPUR</h2>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@ const ProjectList = () => (
                             </div>
                             <div className="project-overlay">
                                 <div className="details-section">
-                                <h2>DESIGNATION | DESIGNATION</h2>
+                                <h2>HERMOSA | JAIPUR</h2>
                                 </div>
                             </div>
                         </div>
