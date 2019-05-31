@@ -31,14 +31,10 @@ body {padding:0; margin:0;background:#000;
         }
       }
     }
-    .header-section {
-      padding:25px 0;
-    }
     .super-container {
       &.people-details {
         .people-row {
           width: 100%;
-          padding: 0 7%;
           display: table;
           margin: 0;
           max-width: none;
@@ -50,32 +46,113 @@ body {padding:0; margin:0;background:#000;
       .row {
         .container {
           &.people-container {
+            position: relative;
+              .container-arrow__arrow {
+                pointer-events: none;
+                overflow: hidden;
+                position: absolute;
+                right: auto;
+                bottom: 0;
+                height: 50px;
+                z-index: 2;
+                width: 100%;
+                margin-bottom: -70px;
+                &::before {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  width: 13px;
+                  height: 78px;
+                  background-repeat: no-repeat;
+                  background: url(https://expertschoice.in/ara/team/scroll.png);
+                  -webkit-animation: screen-arrow 1.9s infinite ease;
+                  animation: screen-arrow 1.9s infinite ease
+                }
+              }
               .grid {
                   @media only screen and (max-width: 768px) {
-                      display:block;
+                    display: flex;
+                    flex-direction: column-reverse;
+                  }
+                  .column-right {
+                    width: 65%;
+                    @media only screen and (max-width: 768px) {
+                      width: 100%;
+                    }
+                    .slider-section {
+                      .slick-dots {
+                        bottom: 0;
+                        margin-bottom: 10px;
+                        text-align: right;
+                        li {
+                          button {
+                            margin-right: 0px;
+                            width: 0;
+                            height: 0;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-bottom: 16px solid #4d4d4d;
+                            transition: all 0.5s ease-in-out;
+                            border-radius: 2px;
+                            padding: 0;
+                            &:hover,  {
+                              border-bottom: 16px solid #fff;
+                            }
+                            &::before {
+                              width: 0;
+                              color: transparent;
+                            }
+                          }
+                          &.slick-active {
+                            button {
+                              border-bottom: 16px solid #fff;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    img {
+                      width: 100%;
+                    }
                   }
               }
             .left-content {
-              max-width:350px;
               margin-bottom: 25px;
+              padding-right: 25px;
               position: static !important;
                 @media only screen and (max-width: 768px) {
                     padding:30px 0;
                 }
               h2 {
-                font-size:28px;
-                color:#fff;
-                font-weight:700;
-                line-height:32px;
-                padding-bottom:10px;
-                margin:0;
+                font-size: 38px;
+                color: #fff;
+                font-weight: 800;
+                line-height: 52px;
+                font-family: 'Montserrat', sans-serif;
+                @media only screen and (max-width: 558px) {
+                  font-size: 38px;
+                  line-height: 37px;
+                }
+                @media only screen and (max-width: 375px) {
+                  font-size: 32px;
+                  line-height: 37px;
+                }
               }
               p {
-                font-size:16px;
-                color:#fff;
-                font-weight:400;
-                line-height:18px;
-                margin:0;
+                font-size: 18px;
+                color: #fff;
+                font-weight: 400;
+                line-height: 28px;
+                margin: 0;
+                padding: 20px 0 0;
+                font-family: 'Montserrat', sans-serif;
+                @media only screen and (max-width: 558px) {
+                  font-size: 14px;
+                  line-height: 18px;
+                  padding: 20px 0;
+                  width: 100%;
+                }
               }
             }
           }
@@ -83,3 +160,27 @@ body {padding:0; margin:0;background:#000;
       }
     }
   }
+
+  @-webkit-keyframes screen-arrow {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    100% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%)
+    }
+}
+
+@keyframes screen-arrow {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    100% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%)
+    }
+}
