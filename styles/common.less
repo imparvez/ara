@@ -1,5 +1,5 @@
-@import './font.less';
-@import (css) url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import (css) url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap');
+@import (css) url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700,800,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -18,4 +18,17 @@ img {
 
 body {
     // cursor: url(https://expertschoice.in/ara/cursor.png), auto;
+    .main-container {
+        height: 100vh;
+        position: relative;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 15px;
+        @media only screen and (max-width: 768px) {
+          padding: 0 25px;
+        }
+        @media only screen and (max-width: 558px) {
+            padding: 0 15px;
+        }
+    }
 }
