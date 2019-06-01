@@ -5,19 +5,6 @@ import '../styles/contact.less'
 
 
 class Contact extends Component {
-    renderSliderContent = (number) => {
-        if (typeof window !== 'undefined') {
-            document.querySelector('.slider-section').style["display"] = "none";
-            document.querySelector(`.slider${number}`).style["display"] = "block";
-        }
-    }
-
-    clearSliderContent = (number) => {
-        if (typeof window !== 'undefined') {
-            document.querySelector(`.slider${number}`).style["display"] = "none";
-        }
-    }
-
     render() {
         return (
             <Fragment>
