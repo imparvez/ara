@@ -25,7 +25,7 @@ const Menu = () => {
             url: '/project-list'
         },{
             text: 'CONTACT',
-            url: ''
+            url: '/contact'
         }
     ]
 
