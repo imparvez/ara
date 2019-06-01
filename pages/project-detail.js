@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import Slider from "react-slick"
+import Slider from 'react-slick'
 import Scramble from 'react-scramble'
+import axios from 'axios'
 import Header from '../components/header'
 import '../styles/project-detail.less'
 
@@ -57,108 +58,126 @@ class SimpleSlider extends Component {
     }
 }
 
-function PeopleDetail() {
-    return (
-        <div className="main-container">
-            <div className="row">
-                <div className="container">
-                    <Header />
+class PeopleDetail extends Component {
+    state = {
+        data: []
+    }
+
+    componentDidMount() {
+        axios
+            .get('https://api.myjson.com/bins/1e740r')
+            .then(res => this.setState({ data: res.data }))
+            .catch(error => console.log('Err: ', error))
+    }
+
+    renderProjectDetail = (data) => {
+        return (
+            <>
+                <div className="column column-left">
+                    <div className="slider-section">
+                        <SimpleSlider images={data.projectImages} />
+                    </div>
                 </div>
-            </div>
-            <div className="super-container">
+                <div className="column column-right">
+                    <div className="detail-content">
+                        <h2>{data.name}</h2>
+                        <div className="tags">
+                            <span>
+                            <Scramble
+                                autoStart
+                                text={`JAIPUR, ${data.location.toUpperCase()} |`}
+                                steps={[
+                                {
+                                    roll: 10,
+                                    action: '+',
+                                    type: 'all',
+                                },
+                                {
+                                    action: '-',
+                                    type: 'forward',
+                                },
+                                ]}
+                            />
+                            </span>
+                            <span>
+                                <Scramble
+                                    autoStart
+                                    text={`${data.type.toUpperCase()} |`}
+                                    steps={[
+                                    {
+                                        roll: 10,
+                                        action: '+',
+                                        type: 'all',
+                                    },
+                                    {
+                                        action: '-',
+                                        type: 'forward',
+                                    },
+                                    ]}
+                                />
+                            </span>
+                            <span>
+                                <Scramble
+                                    autoStart
+                                    text={`${data.status.toUpperCase()} |`}
+                                    steps={[
+                                    {
+                                        roll: 10,
+                                        action: '+',
+                                        type: 'all',
+                                    },
+                                    {
+                                        action: '-',
+                                        type: 'forward',
+                                    },
+                                    ]}
+                                /> 
+                            </span>
+                            <span>
+                                <Scramble
+                                    autoStart
+                                    text={`${data.size.toUpperCase()} |`}
+                                    steps={[
+                                    {
+                                        roll: 10,
+                                        action: '+',
+                                        type: 'all',
+                                    },
+                                    {
+                                        action: '-',
+                                        type: 'forward',
+                                    },
+                                    ]}
+                                />
+                            </span>
+                        </div>
+                        <p>{data.details}</p>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    render() {
+        const { data } = this.state
+        return (
+            <div className="main-container">
                 <div className="row">
-                    <div className="container project-details">
-                        <div className="grid">
-                            <div className="column column-left">
-                                <div className="slider-section">
-                                    <SimpleSlider />
-                                </div>
-                            </div>
-                            <div className="column column-right">
-                                <div className="detail-content">
-                                    <h2>Hermosa</h2>
-                                    <div className="tags">
-                                        <span>
-                                        <Scramble
-                                            autoStart
-                                            text="JAIPUR, RAJASTHAN |"
-                                            steps={[
-                                            {
-                                                roll: 10,
-                                                action: '+',
-                                                type: 'all',
-                                            },
-                                            {
-                                                action: '-',
-                                                type: 'forward',
-                                            },
-                                            ]}
-                                        />
-                                        </span>
-                                        <span>
-                                            <Scramble
-                                                autoStart
-                                                text="COMMERCIAL |"
-                                                steps={[
-                                                {
-                                                    roll: 10,
-                                                    action: '+',
-                                                    type: 'all',
-                                                },
-                                                {
-                                                    action: '-',
-                                                    type: 'forward',
-                                                },
-                                                ]}
-                                            />
-                                        </span>
-                                        <span>
-                                            <Scramble
-                                                autoStart
-                                                text="COMPLETED |"
-                                                steps={[
-                                                {
-                                                    roll: 10,
-                                                    action: '+',
-                                                    type: 'all',
-                                                },
-                                                {
-                                                    action: '-',
-                                                    type: 'forward',
-                                                },
-                                                ]}
-                                            /> 
-                                        </span>
-                                        <span>
-                                            <Scramble
-                                                autoStart
-                                                text="12,000 SQ. FT. |"
-                                                steps={[
-                                                {
-                                                    roll: 10,
-                                                    action: '+',
-                                                    type: 'all',
-                                                },
-                                                {
-                                                    action: '-',
-                                                    type: 'forward',
-                                                },
-                                                ]}
-                                            />
-                                        </span>
-                                    </div>
-                                    <p>
-                                    The unwinding opposite arches putting together a sense of varied monolithic arches creates a succession of interconnected spaces. 
-                                    The 'Chand Bowri' concept in the showroom, provides an experimental space for artists and focusing on rich artisanal traditionals while including everything from furniture to furnishings. 
-                                    </p>
-                                </div>
+                    <div className="container">
+                        <Header />
+                    </div>
+                </div>
+                <div className="super-container">
+                    <div className="row">
+                        <div className="container project-details">
+                            <div className='grid'>
+                                {data.length > 0 && this.renderProjectDetail(data[0])}
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-    )
+                </div>
+        )
+    }
 }
 
 export default PeopleDetail
