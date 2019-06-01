@@ -31,27 +31,15 @@ class SimpleSlider extends Component {
             arrows: false,
             autoplaySpeed: 2000
         }
+        const { images } = this.props
         return (
             <div className="sliderWrapper" onMouseEnter={this.play} onMouseLeave={this.pause}>
                 <Slider {...settings} ref={slider => (this.slider = slider)}>
-                <div>
-                    <img src="https://expertschoice.in/ara/details-img.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/details-img.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/details-img.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/details-img.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/details-img.jpg" alt="" />
-                </div>
-                <div>
-                    <img src="https://expertschoice.in/ara/details-img.jpg" alt="" />
-                </div>
+                    {images && images.map((item, index) => (
+                        <div key={index}>
+                            <img src={item} alt="" />
+                        </div>
+                    ))}
                 </Slider>
             </div>
         );
